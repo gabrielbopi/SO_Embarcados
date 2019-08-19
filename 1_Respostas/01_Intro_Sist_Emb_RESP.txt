@@ -13,11 +13,11 @@ R: São sistemas que utilizam chips microprocessadores digitais programáveis pa
 	R: Prensa de fabricação automatizada,
 
 4. Cite arquiteturas possíveis e as diferenças entre elas.
-R: - Microcontroladores (programáveis,multifunção, relativamente baratos e sem SO);
-   - Microprocessadores (programáveis, multifunção, mais caros, com SO e mais potentes);
+R: - Microcontroladores (programáveis,multifunção, relativamente baratos, sem SO, desempenho não muito alto);
+   - Microprocessadores x86 (programáveis, multifunção, mais caros, com SO e mais potentes);
    - DSPs (Otimizados para processamento de sinais);
-   - SoCs (O sistema inteiro [Processador, memória, io] está integrado dentro de um chip);
-   - FPGA ().
+   - SoCs (programáveis, multifunção, com SO, o sistema inteiro [Processador, memória, io] está integrado dentro de um chip);
+   - FPGA (Otimizado, programável, multifunção, sem SO, pouca memória, caro, implementação mais complexa).
 
 5. Por que usamos o Raspberry Pi na disciplina, ao invés de outro system-on-chip?
-R:
+R: Devido a vasta disponibilidade de materiais de estudo, custo não tão alto e recursos interessantes (+ SO).
