@@ -13,5 +13,10 @@ R: São sistemas que utilizam chips microprocessadores digitais programáveis pa
 	R: Prensa de fabricação automatizada,
 
 4. Cite arquiteturas possíveis e as diferenças entre elas.
+R: - Microcontroladores (programáveis e sem SO);
+   - Microprocessadores (programáveis, com SO e mais potentes);
+   - DSPs (Otimizados para processamento de sinais);
+   - SoCs (O sistema inteiro [Processador, memória, io] está integrado dentro de um chip).
 
 5. Por que usamos o Raspberry Pi na disciplina, ao invés de outro system-on-chip?
+R:
