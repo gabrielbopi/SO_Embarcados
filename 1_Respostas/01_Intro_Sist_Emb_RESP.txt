@@ -2,12 +2,15 @@
 R: São hardware digital programável integrado em um produto, que desempenha funções especificas/otimizadas.
 
 2. O que são sistemas microprocesssados?
-R:
+R: São sistemas que utilizam chips microprocessadores digitais programáveis para tomada de decisões no funcionamento.
 
 3. Apresente aplicações de sistemas embarcados:
 	(a) Para a indústria automotiva;
+	R: Computador de bordo, painel de indicadores, cambio automático...
 	(b) Para eletrodomésticos;
+	R: Microondas, geladeira com timer, sanduicheira...
 	(c) Para automação industrial.
+	R: Prensa de fabricação automatizada,
 
 4. Cite arquiteturas possíveis e as diferenças entre elas.
 
