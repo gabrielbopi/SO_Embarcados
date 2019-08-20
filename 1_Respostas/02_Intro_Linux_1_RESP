@@ -8,6 +8,7 @@ O que é o shell?
 R: É a camada entre o kernel e o usuario. Ele interpreta os comandos da entrada
 
 Por que é importante evitar executar o terminal como super-usuário?
+R: Pois o usuário root tem poder ilimitado sobre o sistema, podendo rodar um comando e danificar tal.
 
 Qual botão do teclado completa o que o usuário escreve no terminal, de acordo com o contexto?
 
