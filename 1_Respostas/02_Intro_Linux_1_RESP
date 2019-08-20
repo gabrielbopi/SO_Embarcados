@@ -2,8 +2,10 @@ Por que o Linux recebeu esse nome?
 R: É um sistema "Unix like" com o nome associado ao criador
 
 O que são daemons?
+R: São programas do sistema que rodam em segundo plano.
 
 O que é o shell?
+R: É a camada entre o kernel e o usuario. Ele interpreta os comandos da entrada
 
 Por que é importante evitar executar o terminal como super-usuário?
 
