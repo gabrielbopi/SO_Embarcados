@@ -24,19 +24,33 @@ R: ls
 (c) Apresentar o caminho completo da pasta.
 R: /caminho_do_arquivo
 (d) Trocar de pasta.
+R: cd /; cd /caminho_da_pasta
 (e) Criar uma pasta.
+R: mkdir pasta
 (f) Apagar arquivos definitivamente.
+R: rm arquivo
 (g) Apagar pastas definitivamente.
+R: rm -r /caminho_da_pasta/pasta/
 (h) Copiar arquivos.
+R: cp /caminho_antigo /caminho_novo
 (i) Copiar pastas.
+R: cp -r /caminho_da_pasta/pasta/  /caminho_novo/
 (j) Mover arquivos. 
+R: cp /caminho_da_pasta/pasta  /caminho_novo/
 (k) Mover pastas.
+R: mv -t /caminho_destino/  /caminho_fonte/
 (l) Renomear pastas.
+R: mv /caminho_destino/nome_antigo/  /caminho_destino/nome_antigo/
 (m) Apresentar o conteúdo de um arquivo.
+R: ./caminho_do_arquivo/arquivo
 (n) Apresentar o tipo de um arquivo.
+R: file /caminho_do_arquivo/arquivo
 (o) Limpar a tela do terminal.
+R: clear
 (p) Encontrar ocorrências de palavras-chave em um arquivo-texto.
+R: cat arquivo | grep palavra_chave
 (q) Ordenar informações em um arquivo-texto.
+R: arquivo_texto > arquivo_alvo
 (r) Substituir ocorrências de palavras-chave em um arquivo-texto.
 (s) Conferir se dois arquivos são iguais.
 (t) Escrever algo na tela.
