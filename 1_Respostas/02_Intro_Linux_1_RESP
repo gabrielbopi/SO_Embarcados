@@ -52,5 +52,7 @@ R: cat arquivo | grep palavra_chave
 (q) Ordenar informações em um arquivo-texto.
 R: arquivo_texto > arquivo_alvo
 (r) Substituir ocorrências de palavras-chave em um arquivo-texto.
+R: 
 (s) Conferir se dois arquivos são iguais.
 (t) Escrever algo na tela.
+R: echo texto
