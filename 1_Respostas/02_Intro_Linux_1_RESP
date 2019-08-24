@@ -54,5 +54,6 @@ R: arquivo_texto > arquivo_alvo
 (r) Substituir ocorrências de palavras-chave em um arquivo-texto.
 R: 
 (s) Conferir se dois arquivos são iguais.
+R: diff -s arquivo arquivo2
 (t) Escrever algo na tela.
 R: echo texto
