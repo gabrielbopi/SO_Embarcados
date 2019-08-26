@@ -13,15 +13,21 @@ Para todas as questões, escreva os comandos correspondentes no terminal.
 Para as questões a seguir, use a pasta no endereço https://github.com/DiogoCaetanoGarcia/Sistemas_Embarcados/raw/master/Questoes/02_Intro_Linux_arqs.zip
 
 6. Liste somente os arquivos com extensão .txt.
+R: $ ls -li | grep "\.txt"
 
 7. Liste somente os arquivos com extensão .png.
+R: $ ls -li | grep "\.png"
 
 8. Liste somente os arquivos com extensão .jpg.
+R: $ ls -li | grep "\.jpg"
 
 9. Liste somente os arquivos com extensão .gif.
+R: $ ls -li | grep "\.gif"
 
 10. Liste somente os arquivos que contenham o nome 'cal'.
+R: $ ls -li | grep "cal"
 
 11. Liste somente os arquivos que contenham o nome 'tux'.
+R: $ ls -li | grep "tux"
 
 12. Liste somente os arquivos que comecem com o nome 'tux'.
