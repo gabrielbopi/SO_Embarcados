@@ -1,7 +1,8 @@
 Para todas as questões, compile-as com o gcc e execute-as via terminal.
+  Obs: Arquivos na parta '03_GCC_RESP'
 
 1. Crie um "Olá mundo!" em C.
-R: Arquivo 'Ex1.c'
+  R: Arquivo 'Ex1.c'
 
 2. Crie um código em C que pergunta ao usuário o seu nome, e imprime no terminal "Ola " e o nome do usuário. Por exemplo, considerando que o código criado recebeu o nome de 'ola_usuario_1':
 
@@ -10,6 +11,7 @@ $ ./ola_usuario_1
 $ Digite o seu nome: Eu
 $ Ola Eu
 ```
+  R: Arquivo 'Ex2.c'
 
 3. Apresente os comportamentos do código anterior nos seguintes casos:
 
