@@ -60,6 +60,7 @@ $ ./ola_usuario_1 < ola.txt
 $ ./ola_usuario_2 Eu
 $ Ola Eu
 ```
+  R: Arquivo 'Ex4.c'
 
 5. Apresente os comportamentos do código anterior nos seguintes casos:
 
@@ -67,32 +68,38 @@ $ Ola Eu
 ```bash
 $ ./ola_usuario_2 Eu Mesmo
 ```
+  R: Ola, Eu
 
 (b) Se o usuário insere mais de um nome entre aspas duplas. Por exemplo:
 ```bash
 $ ./ola_usuario_2 "Eu Mesmo"
 ```
+R: Ola, Eu mesmo
 
 (c) Se é usado um pipe. Por exemplo:
 ```bash
 $ echo Eu | ./ola_usuario_2
 ```
+  R: Ola, (null)
 
 (d) Se é usado um pipe com mais de um nome. Por exemplo:
 ```bash
 $ echo Eu Mesmo | ./ola_usuario_2
 ```
+  R: Ola, (null)
 
 (e) Se é usado um pipe com mais de um nome entre aspas duplas. Por exemplo:
 ```bash
 $ echo Eu Mesmo | ./ola_usuario_2
 ```
+  R: Ola, (null)
 
 (f) Se é usado o redirecionamento de arquivo. Por exemplo:
 ```bash
 $ echo Ola mundo cruel! > ola.txt
 $ ./ola_usuario_2 < ola.txt
 ```
+  R: Ola, (null)
 
 6. Crie um código em C que faz o mesmo que o código da questão 4, e em seguida imprime no terminal quantos valores de entrada foram fornecidos pelo usuário. Por exemplo, considerando que o código criado recebeu o nome de 'ola_usuario_3':
 
