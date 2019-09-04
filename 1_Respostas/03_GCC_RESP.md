@@ -108,6 +108,7 @@ $ ./ola_usuario_3 Eu
 $ Ola Eu
 $ Numero de entradas = 2
 ```
+  R: Arquivo 'Ex6.c'
 
 7. Crie um código em C que imprime todos os argumentos de entrada fornecidos pelo usuário. Por exemplo, considerando que o código criado recebeu o nome de 'ola_argumentos':
 
