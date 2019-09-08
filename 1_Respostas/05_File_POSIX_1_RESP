@@ -29,6 +29,7 @@ R:  int fseek(FILE * stream, long int offset, int origin);  //Reposiciona o pont
 R:  Função <stdlib.h> e <stdio.h>
 
 2. O que é a norma POSIX?
+R:  É uma API ou um padrão de normas de funções e implementações em SOs para que haja unicidade no desenvolvimento de aplicações, assim haverá maior portabilidade do código em várias plataformas distintas.
 
 3. Considerando a norma POSIX, responda:
 
