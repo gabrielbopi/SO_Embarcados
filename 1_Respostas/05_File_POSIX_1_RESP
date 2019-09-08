@@ -1,14 +1,26 @@
 1. Considerando a biblioteca-padrão da linguagem C, responda:
 
 (a) Quais são as funções (e seus protótipos) para abrir e fechar arquivos?
+R:  FILE *fopen (char *nome_do_arquivo, char *modo);  //Abertura
+    int fclose(FILE *stream_do_arquivo);  //Fechar arquivo
+    void exit(int codigo_de_retorno_do_programa); //Encerrar programa
 
 (b) Quais são as funções (e seus protótipos) para escrever em arquivos?
+R:  int putc(int ch, FILE *fp); //Inserir caracteres no arquivo
+    int feof(FILE *fp);
+    char *fputs(char *str, int tamanho, FILE *fp);  //Escreve blocos de string no arquivo
 
 (c) Quais são as funções (e seus protótipos) para ler arquivos?
+R:  int getc(FILE *fp); //Ler caracteres num arquivo
+    char *fgets(char *str, int tamanho, FILE *fp);  //Lê blocos de string no arquivo
+    int ferror (FILE *fp);  //Verifica o sinalizador de erro do arquivo
+    void perror(const char * str);  // Imprime uma mensagem de erro
 
 (d) Quais são as funções (e seus protótipos) para reposicionar um ponteiro para arquivo?
 
+
 (e) Quais bibliotecas devem ser incluídas no código para poder utilizar as funções acima?
+R:  Função <stdlib.h>
 
 2. O que é a norma POSIX?
 
