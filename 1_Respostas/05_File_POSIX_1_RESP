@@ -34,11 +34,18 @@ R:  É uma API ou um padrão de normas de funções e implementações em SOs pa
 3. Considerando a norma POSIX, responda:
 
 (a) Quais são as funções (e seus protótipos) para abrir e fechar arquivos?
+R:  int open(const char* path, int oflag, ...); //Abre e/ou cria um arquivo
+    int close(int fildes);
 
 (b) Quais são as funções (e seus protótipos) para escrever em arquivos?
+R:  ssize_t write(int fildes, const void *buf, size_t n_byte);  //Lê um arquivo genérico
+
 
 (c) Quais são as funções (e seus protótipos) para ler arquivos?
+R:  ssize_t read(int fildes, void *buf, size_t n_byte);  //Lê um arquivo genérico
 
 (d) Quais são as funções (e seus protótipos) para reposicionar um ponteiro para arquivo?
+R:  off_t lseek(int fd, off_t offset, int whence);   //Reposiciona o ponteiro do descritor de um arquivo aberto
 
 (e) Quais bibliotecas devem ser incluídas no código para poder utilizar as funções acima?
+R:  <fcntl.h>, <unistd.h>
