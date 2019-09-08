@@ -9,15 +9,18 @@ R:  FILE *fopen (char *nome_do_arquivo, char *modo);  //Abertura
 R:  int putc(int ch, FILE *fp); //Inserir caracteres no arquivo
     int feof(FILE *fp);
     char *fputs(char *str, int tamanho, FILE *fp);  //Escreve blocos de string no arquivo
+    insigned fwrite(void *buffer, int numero_de_bytes, int count, FILE *fp);    //Escreve um bloco de dados genéricos no arquivo
 
 (c) Quais são as funções (e seus protótipos) para ler arquivos?
 R:  int getc(FILE *fp); //Ler caracteres num arquivo
     char *fgets(char *str, int tamanho, FILE *fp);  //Lê blocos de string no arquivo
     int ferror (FILE *fp);  //Verifica o sinalizador de erro do arquivo
     void perror(const char * str);  // Imprime uma mensagem de erro
+    insigned fread(void *buffer, int numero_de_bytes, int count, FILE *fp);    //Lê um bloco de dados genéricos no arquivo
 
 (d) Quais são as funções (e seus protótipos) para reposicionar um ponteiro para arquivo?
-
+R:  int fseek(FILE * stream, long int offset, int origin);  //Reposiciona o ponteiro do stream
+    void rewind(FILE * stream); //Posiciona o ponteiro do stream para o início
 
 (e) Quais bibliotecas devem ser incluídas no código para poder utilizar as funções acima?
 R:  Função <stdlib.h>
