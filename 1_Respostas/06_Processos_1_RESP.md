@@ -16,7 +16,7 @@ R:  Do ingles, é um utensilio de duas pontas.
 
 (a) `system()`?
 R: É simples e prático.
-   Não necessita de várias biblioteca, apenas de programa nativos do sistema.
+   Não necessita de várias bibliotecas, apenas de programas nativos do sistema.
    Contra: Depende bastante do sistema, e pode acontecer erro caso o sistema não tenha a aplicação especifica usada.
 
 (b) `fork()` e `exec()`?
@@ -32,12 +32,15 @@ R:  Não necessita de recursos do sistema, e é muito menos propenso a erros.
 R:  Executa programas que estão no current path.
 
 (b) `execv()`?
-R:  
+R:  Executa o programa especificado sem precisar de argumentos adicionais.
 
 (c) `exece()`?
-
+R: Executa o programa especificado + 1 argumento.
 (d) `execvp()`?
+R: Aceita executar o programa da current path e sem mais argumentos.
 
 (e) `execve()`?
+R: Aceita executar o programa da current path + 1 argumento
 
 (f) `execle()`?
+R: Aceita um argumento adicional que é um vararg da linguagem C.
