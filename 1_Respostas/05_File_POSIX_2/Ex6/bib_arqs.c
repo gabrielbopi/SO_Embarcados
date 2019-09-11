@@ -7,7 +7,7 @@
 int tam_arq_texto(char *nome_arquivo)
 {
     	int fp;
-	int i, tamanho_bytes;
+	int i, tamanho_bytes=0;
 	char caractere;
 
     	fp = open(nome_arquivo, O_RDONLY);
