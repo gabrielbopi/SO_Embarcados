@@ -22,14 +22,20 @@ R:	Com 4 bytes (IPv4) usa-se os primeiros, onde a quantidade é especificada a d
 R:	Pega-se o restante dos bytes supracitados. O roteador os define.
 
 (d) O que é o DNS? Para que ele serve?
-
+R: É um servidor que associa a url pretendida com o seu respectivo endereço IP.
 
 3. Com relação à pilha de protocolos TCP/IP, responda:
 
 (a) O que são suas camadas? Para que servem?
+R:	São o nível de abstração do processo de comunicação cliente-servidor. Servem para facilitar a implentação dos sistemas e modularizar a estrutura da rede.
 
 (b) Quais são as camadas existentes? Para que servem?
-
+R:	Camadas:
+	Aplicação - Representa o mais alto nível, e é a que os programas utilizam.
+	Transporte - onde há a troca de informação entre Hosts.
+	Internet - onde há a troca de informação na rede mundial de computadores.
+	Enlace - a vista da comunicação entre dispositivos físicos.
+		
 (c) Quais camadas são utilizadas pela biblioteca de sockets?
 
 (d) As portas usadas por servidores na função bind() se referem a qual camada?
