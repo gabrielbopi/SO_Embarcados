@@ -43,5 +43,6 @@ R:	Podem ser a de Transporte, Internet ou Enlace.
 R:	A camada de Transporte.
 
 (e) Os endereços usados por clientes na função connect() se referem a qual camada?
+R:	À camada de Internet.
 
 4. Qual é a diferença entre os métodos `GET` e `POST` no protocolo HTTP?
