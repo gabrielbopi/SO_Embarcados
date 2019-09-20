@@ -13,12 +13,16 @@ R:	20 e 21: FTP
 2. Com relação a endereços IP, responda:
 
 (a) Qual é a diferença entre endereços IP externos e locais?
+R:	Com o ip externo, sua máquina é enxergada pela rede mundial de computadores (network). Com o local ela é vista pelo roteador na rede interna (host).
 
 (b) Como endereços IP externos são definidos? Quem os define?
+R:	Com 4 bytes (IPv4) usa-se os primeiros, onde a quantidade é especificada a direita. A operadora de telefonia os define.
 
 (c) Como endereços IP locais são definidos? Quem os define?
+R:	Pega-se o restante dos bytes supracitados. O roteador os define.
 
 (d) O que é o DNS? Para que ele serve?
+
 
 3. Com relação à pilha de protocolos TCP/IP, responda:
 
