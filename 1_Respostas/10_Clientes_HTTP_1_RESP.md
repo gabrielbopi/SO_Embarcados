@@ -37,8 +37,10 @@ R:	Camadas:
 	Enlace - a vista da comunicação entre dispositivos físicos.
 		
 (c) Quais camadas são utilizadas pela biblioteca de sockets?
+R:	Podem ser a de Transporte, Internet ou Enlace.
 
 (d) As portas usadas por servidores na função bind() se referem a qual camada?
+R:	A camada de Transporte.
 
 (e) Os endereços usados por clientes na função connect() se referem a qual camada?
 
