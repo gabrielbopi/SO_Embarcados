@@ -5,7 +5,7 @@ struct usuario
 	int creditos; 
 };
 
-int adicionaUsuario(char *nome_arquivo, char *nome_usuario,char *senha_usuario);//Retorna id do usuario
+int adicionaUsuario(char *nome_arquivo, char *nome_usuario,char *senha_usuario, int creditos_usuario);//Retorna id do usuario
 
 struct usuario leUsuario(char *nome_arquivo, char *nome_usuario);//Retorna a struct do usuario
 

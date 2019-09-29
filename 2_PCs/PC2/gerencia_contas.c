@@ -3,7 +3,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <string.h>
-#include "bib_arqs.h"
+//#include "bib_arqs.h"
 #include "gerencia_contas.h"
 
 /*struct usuario
@@ -36,6 +36,8 @@ struct usuario leUsuario(char *nome_arquivo, char *nome_usuario){
 	    read(fp, usuario_corrente.nome, 30 * sizeof(char));
 		if (strcmp(usuario_corrente.nome, nome_usuario) == 0){
 		    read(fp, usuario_corrente.senha, 30 * sizeof(char));
+   		    read(fp, &usuario_corrente.creditos, sizeof(int));
+
 			return usuario_corrente;
 		}
 		else{
@@ -46,12 +48,14 @@ struct usuario leUsuario(char *nome_arquivo, char *nome_usuario){
 	usuario_corrente.id = -1;
 	strcpy(usuario_corrente.nome,"");
 	strcpy(usuario_corrente.senha,"");
+	usuario_corrente.creditos = 0;
+
 
 	printf("Usuario nao existente anteriormente no sistema.\n");
    	return usuario_corrente;
 }
 
-int adicionaUsuario(char *nome_arquivo, char *nome_usuario,char *senha_usuario){
+int adicionaUsuario(char *nome_arquivo, char *nome_usuario,char *senha_usuario, int creditos_usuario){
     int fp;
 	struct usuario usuario_corrente;
 
@@ -63,6 +67,7 @@ int adicionaUsuario(char *nome_arquivo, char *nome_usuario,char *senha_usuario){
 	else{
 		strcpy(usuario_corrente.nome,nome_usuario);
 		strcpy(usuario_corrente.senha,senha_usuario);
+		usuario_corrente.creditos = creditos_usuario;
 
 		fp = open(nome_arquivo, O_WRONLY | O_APPEND | O_CREAT, S_IRWXU);
     	if(fp == -1){
