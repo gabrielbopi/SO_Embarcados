@@ -19,9 +19,9 @@ int main (int argc, char* const argv[]){
 	unsigned short servidorPorta;
 	struct sockaddr_in servidorAddr;
 
-	if (argc < 3) {
+	if (argc < 2) {
 		printf("Escolha uma opcao valida.\n");
-		printf("Para utilizar o programa escreva no terminal:\n$ ./servidor_sistema <IP do Servidor> <Porta do servidor>\n");
+		printf("Para utilizar o programa escreva no terminal:\n$ ./servidor_sistema <Porta do servidor>\n");
 		return -1;
 	}
 	// Definindo o tratamento de SIGINT
@@ -98,9 +98,17 @@ void procuraUsuario(int client_socket){
 				usuario_corrente.id, usuario_corrente.nome, usuario_corrente.senha, usuario_corrente.creditos);
 			write(client_socket, &resposta, sizeof(resposta));
 			write(client_socket, &usuario_corrente, length);
+		}else{
+			resposta = 2;
+			printf("ID: %d, usuario: %s\nSenha incorreta!\n",
+				usuario_corrente.id, usuario_corrente.nome);
+			write(client_socket, &resposta, sizeof(resposta));
 		}
+	}else{
+		resposta = 0;
+		printf("Usuario nao encontrado...\n");
+		write(client_socket, &resposta, sizeof(resposta));
 	}
-
 	/*fprintf(stderr, "nMensagem = %s\n", text);
 	if (!strcmp(text, "sair")){
 		free (text);
