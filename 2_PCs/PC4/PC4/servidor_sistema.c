@@ -98,9 +98,15 @@ void procuraUsuario(int client_socket){
 				usuario_corrente.id, usuario_corrente.nome, usuario_corrente.senha, usuario_corrente.creditos);
 			write(client_socket, &resposta, sizeof(resposta));
 			write(client_socket, &usuario_corrente, length);
+		}else{
+			resposta = 2;
+			printf("ID: %d, usuario: %s\nSenha incorreta!\n",
+				usuario_corrente.id, usuario_corrente.nome);
 		}
+	}else{
+		resposta = 0;
+		printf("Usuario nao encontrado...\n");
 	}
-
 	/*fprintf(stderr, "nMensagem = %s\n", text);
 	if (!strcmp(text, "sair")){
 		free (text);
