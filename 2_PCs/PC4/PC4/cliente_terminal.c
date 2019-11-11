@@ -59,19 +59,20 @@ int main(int argc, char* const argv[]){
 	write(socket_id, &usuario_corrente, length);
 	read(socket_id, &resposta, sizeof(resposta));
 	//fprintf(stderr, "%d bytes.", length);
-	read(socket_id, &usuario_corrente, length);	
+	read(socket_id, &usuario_corrente, length);
 	// Fechando o socket local
 	close(socket_id);
-	
-	printf("ID: %d, usuario: %s, senha:%s, creditos:%d\n",
-				usuario_corrente.id, usuario_corrente.nome, usuario_corrente.senha, usuario_corrente.creditos);
 
 	if(resposta == 1){
+		printf("ID: %d, usuario: %s, senha:%s, creditos:%d\n",
+				usuario_corrente.id, usuario_corrente.nome, usuario_corrente.senha, usuario_corrente.creditos);
 		printf("Abre-te Sesamo!\n");
 		//polegarAutenticado = recolheDigital()/256;
 		//if(polegarAutenticado == 10) {abreTranca();}
 	}
-	else	{printf("Deu errado\n");}
+	else if(resposta == 2)	{printf("Senha incorreta!\n");}
+	else if(resposta == 0)	{printf("Usuario escrito escrito errado ou inexistente.\n");}
+	else {printf("Erro no servidor.\n");}
 
 	return 0;
 }
