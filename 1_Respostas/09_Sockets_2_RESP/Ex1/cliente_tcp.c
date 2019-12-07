@@ -15,7 +15,7 @@ int main (int argc, char* const argv[])
 	char *IP_Servidor;
 	char *mensagem[] ={"1","2","3","4","5","6","7","8","9","10"};
 
-	if (argc != 4)
+	if (argc < 3)
 	{
 		puts("   Modo de Uso:");
 		printf("      %s <IP do Servidor> <Porta do servidor>\n", argv[0]);
@@ -50,7 +50,6 @@ int main (int argc, char* const argv[])
 	for(i=0; i<10 ;i++){
 		printf("i = %d\n", i);
 		length = strlen(mensagem[i]) + 1;
-		printf("length: %d\n", length);
 		write(socket_id, &length, sizeof(length));
 		write(socket_id, mensagem[i], length);
 		printf("Mandado: %s\n", mensagem[i]);
